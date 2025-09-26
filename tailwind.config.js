@@ -89,7 +89,7 @@ export default {
         },
         "borderRadius": {
             "sm": "calc(var(--radius) - 6px)",
-            "DEFAULT": "var(--radius - 4px)",
+            "DEFAULT": "calc(var(--radius) - 4px)",
             "md": "calc(var(--radius) - 2px)",
             "lg": "var(--radius)",
             "xl": "calc(var(--radius) + 4px)",
