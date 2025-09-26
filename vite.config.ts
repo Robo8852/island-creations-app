@@ -17,5 +17,16 @@ export default defineConfig({
       '@lib': path.resolve(__dirname, './src/lib'),
       '(components)': path.resolve(__dirname, './src/(components)'),
     }
+  },
+  server: {
+    host: true,
+    allowedHosts: [
+      '.trycloudflare.com',
+      '.loca.lt',
+      'clarke-vocabulary-safely-reveal.trycloudflare.com',
+    ],
+    hmr: {
+      clientPort: 443,
+    },
   }
 })
