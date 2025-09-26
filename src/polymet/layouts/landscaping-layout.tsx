@@ -19,28 +19,28 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-teal-50 to-amber-50">
+    <div className="min-h-screen bg-gradient-to-b from-sky-100 via-teal-50 to-amber-50">
       {/* Top Contact Bar */}
-      <div className="bg-[#2F4F2F] text-white py-2 px-4 hidden md:block">
+      <div className="bg-teal-700 text-white py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-[#FFA500]" />
+              <Phone className="h-4 w-4 text-amber-400" />
 
               <span>(555) 123-PALM</span>
             </div>
             <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-[#FFA500]" />
+              <Mail className="h-4 w-4 text-amber-400" />
 
               <span>info@islandcreations.com</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-[#FFA500]" />
+              <MapPin className="h-4 w-4 text-amber-400" />
 
               <span>Serving South Florida</span>
             </div>
           </div>
-          <div className="text-[#D3D3D3]">
+          <div className="text-teal-50/90">
             Monday - Saturday: 7:00 AM - 6:00 PM
           </div>
         </div>
