@@ -19,7 +19,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-teal-50 to-amber-50">
       {/* Top Contact Bar */}
       <div className="bg-[#2F4F2F] text-white py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between items-center text-sm">
@@ -47,7 +47,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white shadow-lg border-b-4 border-[#FFA500] sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-lg border-b-4 border-amber-500 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -65,10 +65,10 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <Link
                   key={link.label}
                   to={link.href}
-                  className="text-[#2F4F2F] hover:text-[#FFA500] font-medium transition-colors duration-200 relative group"
+                  className="text-emerald-900 hover:text-amber-600 font-medium transition-colors duration-200 relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FFA500] group-hover:w-full transition-all duration-200"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-200"></span>
                 </Link>
               ))}
             </div>
@@ -77,12 +77,12 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
             <div className="hidden lg:flex items-center gap-4">
               <Button
                 variant="outline"
-                className="border-[#2F4F2F] text-[#2F4F2F] hover:bg-[#2F4F2F] hover:text-white"
+                className="border-emerald-800 text-emerald-800 hover:bg-emerald-800 hover:text-white"
               >
                 <Phone className="h-4 w-4 mr-2" />
                 Call Now
               </Button>
-              <Button className="bg-[#FFA500] hover:bg-[#FF8C00] text-[#2F2F2F] font-semibold border-2 border-[#8B4513]">
+              <Button className="bg-amber-500 hover:bg-amber-600 text-emerald-950 font-semibold border-2 border-amber-700">
                 Free Estimate
               </Button>
             </div>
@@ -90,7 +90,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-[#2F4F2F] hover:text-[#FFA500] transition-colors"
+              className="lg:hidden p-2 text-emerald-900 hover:text-amber-600 transition-colors"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
