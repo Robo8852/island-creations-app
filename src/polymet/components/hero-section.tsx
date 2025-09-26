@@ -6,7 +6,6 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FAFAFA] text-[#333333]">
       {/* Background with tropical gradient */}
       <div className="absolute inset-0 bg-[#FAFAFA]"></div>
-      </div>
 
       {/* Decorative wave pattern */}
       <div className="absolute bottom-0 left-0 right-0">
