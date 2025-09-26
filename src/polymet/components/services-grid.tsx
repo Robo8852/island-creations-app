@@ -107,11 +107,11 @@ export function ServicesGrid() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-gradient-to-r from-[#2F4F2F] to-[#8B4513] rounded-2xl p-8 text-white">
-          <h3 className="text-2xl font-bold mb-4">
+        <div className="text-center bg-[#FAFAFA] border border-[#4A6741]/20 rounded-2xl p-8 text-[#333333]">
+          <h3 className="text-2xl font-bold mb-4 text-[#4A6741]">
             Ready to Transform Your Landscape?
           </h3>
-          <p className="text-[#D3D3D3] mb-6 max-w-2xl mx-auto">
+          <p className="text-[#333333] mb-6 max-w-2xl mx-auto">
             Get a free consultation and estimate for your tropical landscaping
             project. Our experts are ready to bring your island paradise vision
             to life.
@@ -119,14 +119,14 @@ export function ServicesGrid() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-[#FFA500] hover:bg-[#FF8C00] text-[#2F2F2F] font-semibold border-2 border-[#FFA500]"
+              className="bg-[#FFA500] hover:bg-[#FFA500]/90 text-[#333333] font-semibold border-2 border-[#4A6741]"
             >
               Get Free Estimate
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-[#FFA500] text-[#FFA500] hover:bg-[#FFA500] hover:text-[#2F2F2F] bg-transparent"
+              className="border-2 border-[#1E90FF] text-[#1E90FF] hover:bg-[#1E90FF] hover:text-white bg-transparent"
             >
               Call (555) 123-PALM
             </Button>

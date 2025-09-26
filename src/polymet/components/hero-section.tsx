@@ -7,18 +7,6 @@ export function HeroSection() {
       {/* Background with tropical gradient */}
       <div className="absolute inset-0 bg-[#FAFAFA]"></div>
 
-      {/* Decorative wave pattern */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg
-          viewBox="0 0 1200 120"
-          className="w-full h-20 text-[#1E90FF]/20"
-        >
-          <path
-            d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
