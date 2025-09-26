@@ -24,6 +24,7 @@ export default defineConfig({
       '.trycloudflare.com',
       '.loca.lt',
       'clarke-vocabulary-safely-reveal.trycloudflare.com',
+      'survivor-capital-reasons-knew.trycloudflare.com',
     ],
     hmr: {
       clientPort: 443,
