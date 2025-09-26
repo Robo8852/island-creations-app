@@ -28,19 +28,19 @@ const iconMap = {
 
 export function ServicesGrid() {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#D3D3D3] to-white">
+    <section className="py-20 bg-[#FAFAFA] text-[#333333]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#800000] mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#4A6741] mb-4">
             Our Specialized Services
           </h2>
-          <p className="text-xl text-[#2F2F2F] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#333333] max-w-3xl mx-auto leading-relaxed">
             From excavation to tropical paradise creation, we provide
             comprehensive landscaping solutions that transform your property
             into an island oasis.
           </p>
-          <div className="mt-6 w-24 h-1 bg-[#FFA500] mx-auto rounded-full"></div>
+          <div className="mt-6 w-24 h-1 bg-[#1E90FF] mx-auto rounded-full"></div>
         </div>
 
         {/* Services Grid */}
@@ -52,16 +52,16 @@ export function ServicesGrid() {
             return (
               <Card
                 key={service.id}
-                className="group hover:shadow-xl transition-all duration-300 border-2 border-[#8B4513]/20 hover:border-[#FFA500] bg-white"
+                className="group hover:shadow-xl transition-all duration-300 border-2 border-[#4A6741]/20 hover:border-[#1E90FF] bg-white"
               >
                 <CardHeader className="text-center pb-4">
-                  <div className="mx-auto mb-4 p-4 rounded-full bg-gradient-to-br from-[#2F4F2F] to-[#8B4513] w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-8 w-8 text-[#FFA500]" />
+                  <div className="mx-auto mb-4 p-4 rounded-full bg-[#4A6741]/10 border border-[#4A6741]/30 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <IconComponent className="h-8 w-8 text-[#4A6741]" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-[#800000] group-hover:text-[#2F4F2F] transition-colors">
+                  <CardTitle className="text-xl font-bold text-[#4A6741] group-hover:text-[#1E90FF] transition-colors">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-[#2F2F2F] leading-relaxed">
+                  <CardDescription className="text-[#333333] leading-relaxed">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
@@ -78,7 +78,7 @@ export function ServicesGrid() {
                   </div>
 
                   {/* Features List */}
-                  <ul className="space-y-2 text-sm text-[#2F2F2F]">
+                  <ul className="space-y-2 text-sm text-[#333333]">
                     {service.features.slice(0, 3).map((feature, index) => (
                       <li key={index} className="flex items-start gap-2">
                         <span className="text-[#FFA500] mt-1">•</span>
@@ -95,7 +95,7 @@ export function ServicesGrid() {
                   {/* CTA Button */}
                   <Button
                     variant="outline"
-                    className="w-full mt-4 border-[#2F4F2F] text-[#2F4F2F] hover:bg-[#2F4F2F] hover:text-white group-hover:border-[#FFA500] group-hover:text-[#FFA500] transition-all"
+                    className="w-full mt-4 border-[#4A6741] text-[#4A6741] hover:bg-[#1E90FF] hover:text-white group-hover:border-[#1E90FF] transition-all"
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />

@@ -19,35 +19,35 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-100 via-teal-50 to-amber-50">
+    <div className="min-h-screen bg-[#FAFAFA]">
       {/* Top Contact Bar */}
-      <div className="bg-teal-700 text-white py-2 px-4 hidden md:block">
+      <div className="bg-[#FAFAFA] text-[#333333] py-2 px-4 hidden md:block border-b border-[#4A6741]/20">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-amber-400" />
+              <Phone className="h-4 w-4 text-[#4A6741]" />
 
               <span>(555) 123-PALM</span>
             </div>
             <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-amber-400" />
+              <Mail className="h-4 w-4 text-[#4A6741]" />
 
               <span>info@islandcreations.com</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-amber-400" />
+              <MapPin className="h-4 w-4 text-[#4A6741]" />
 
               <span>Serving South Florida</span>
             </div>
           </div>
-          <div className="text-teal-50/90">
+          <div className="text-[#333333]">
             Monday - Saturday: 7:00 AM - 6:00 PM
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-lg border-b-4 border-amber-500 sticky top-0 z-50">
+      <nav className="bg-[#FAFAFA] shadow-md border-b border-[#4A6741]/30 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -65,10 +65,10 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <Link
                   key={link.label}
                   to={link.href}
-                  className="text-emerald-900 hover:text-amber-600 font-medium transition-colors duration-200 relative group"
+                  className="text-[#4A6741] hover:text-[#1E90FF] font-medium transition-colors duration-200 relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-200"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1E90FF] group-hover:w-full transition-all duration-200"></span>
                 </Link>
               ))}
             </div>
@@ -77,12 +77,12 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
             <div className="hidden lg:flex items-center gap-4">
               <Button
                 variant="outline"
-                className="border-emerald-800 text-emerald-800 hover:bg-emerald-800 hover:text-white"
+                className="border-[#1E90FF] text-[#1E90FF] hover:bg-[#1E90FF] hover:text-white"
               >
                 <Phone className="h-4 w-4 mr-2" />
                 Call Now
               </Button>
-              <Button className="bg-amber-500 hover:bg-amber-600 text-emerald-950 font-semibold border-2 border-amber-700">
+              <Button className="bg-[#FFA500] hover:bg-[#FFA500]/90 text-[#333333] font-semibold border-2 border-[#4A6741]">
                 Free Estimate
               </Button>
             </div>
@@ -90,7 +90,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-emerald-900 hover:text-amber-600 transition-colors"
+              className="lg:hidden p-2 text-[#4A6741] hover:text-[#1E90FF] transition-colors"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -102,27 +102,27 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden border-t border-[#D3D3D3] py-4">
+            <div className="lg:hidden border-t border-[#4A6741]/20 py-4 bg-[#FAFAFA]">
               <div className="flex flex-col space-y-4">
                 {navigationLinks.map((link) => (
                   <Link
                     key={link.label}
                     to={link.href}
-                    className="text-[#2F4F2F] hover:text-[#FFA500] font-medium transition-colors px-2 py-1"
+                    className="text-[#4A6741] hover:text-[#1E90FF] font-medium transition-colors px-2 py-1"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
                   </Link>
                 ))}
-                <div className="flex flex-col gap-3 pt-4 border-t border-[#D3D3D3]">
+                <div className="flex flex-col gap-3 pt-4 border-t border-[#4A6741]/20">
                   <Button
                     variant="outline"
-                    className="border-[#2F4F2F] text-[#2F4F2F] hover:bg-[#2F4F2F] hover:text-white"
+                    className="border-[#1E90FF] text-[#1E90FF] hover:bg-[#1E90FF] hover:text-white"
                   >
                     <Phone className="h-4 w-4 mr-2" />
                     Call (555) 123-PALM
                   </Button>
-                  <Button className="bg-[#FFA500] hover:bg-[#FF8C00] text-[#2F2F2F] font-semibold border-2 border-[#8B4513]">
+                  <Button className="bg-[#FFA500] hover:bg-[#FFA500]/90 text-[#333333] font-semibold border-2 border-[#4A6741]">
                     Get Free Estimate
                   </Button>
                 </div>
@@ -133,10 +133,10 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
       </nav>
 
       {/* Main Content */}
-      <main>{children}</main>
+      <main className="text-[#333333]">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-[#2F2F2F] text-white">
+      <footer className="bg-[#FAFAFA] text-[#333333] border-t border-[#4A6741]/20">
         {/* Main Footer Content */}
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -148,18 +148,18 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 className="h-10 w-auto"
               />
 
-              <p className="text-[#D3D3D3] leading-relaxed">
+              <p className="text-[#333333] leading-relaxed">
                 Transform your property into a tropical paradise with our expert
                 landscaping, excavation, and palm tree services.
               </p>
               <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#FFA500] rounded-full flex items-center justify-center text-[#2F2F2F] font-bold text-sm">
+                <div className="w-8 h-8 bg-[#FFA500] rounded-full flex items-center justify-center text-[#333333] font-bold text-sm">
                   f
                 </div>
                 <div className="w-8 h-8 bg-[#1E90FF] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   t
                 </div>
-                <div className="w-8 h-8 bg-[#800000] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                <div className="w-8 h-8 bg-[#4A6741] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   i
                 </div>
               </div>
@@ -167,14 +167,14 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-semibold text-[#FFA500] mb-4">
+              <h3 className="text-lg font-semibold text-[#4A6741] mb-4">
                 Our Services
               </h3>
-              <ul className="space-y-2 text-[#D3D3D3]">
+              <ul className="space-y-2 text-[#333333]">
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Excavation Services
                   </Link>
@@ -182,7 +182,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Palm Tree Care
                   </Link>
@@ -190,7 +190,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Island Landscaping
                   </Link>
@@ -198,7 +198,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Landscape Maintenance
                   </Link>
@@ -206,7 +206,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Hardscaping
                   </Link>
@@ -216,14 +216,14 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold text-[#FFA500] mb-4">
+              <h3 className="text-lg font-semibold text-[#4A6741] mb-4">
                 Quick Links
               </h3>
-              <ul className="space-y-2 text-[#D3D3D3]">
+              <ul className="space-y-2 text-[#333333]">
                 <li>
                   <Link
                     to="/about"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     About Us
                   </Link>
@@ -231,7 +231,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/portfolio"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Our Work
                   </Link>
@@ -239,7 +239,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Get Estimate
                   </Link>
@@ -247,7 +247,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Emergency Services
                   </Link>
@@ -255,7 +255,7 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-[#FFA500] transition-colors"
+                    className="hover:text-[#1E90FF] transition-colors"
                   >
                     Service Areas
                   </Link>
@@ -265,22 +265,22 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-semibold text-[#FFA500] mb-4">
+              <h3 className="text-lg font-semibold text-[#4A6741] mb-4">
                 Contact Info
               </h3>
-              <div className="space-y-3 text-[#D3D3D3]">
+              <div className="space-y-3 text-[#333333]">
                 <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-[#FFA500]" />
+                  <Phone className="h-4 w-4 text-[#1E90FF]" />
 
                   <span>(555) 123-PALM</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-[#FFA500]" />
+                  <Mail className="h-4 w-4 text-[#1E90FF]" />
 
                   <span>info@islandcreations.com</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 text-[#FFA500] mt-0.5" />
+                  <MapPin className="h-4 w-4 text-[#1E90FF] mt-0.5" />
 
                   <span>
                     123 Tropical Way
@@ -294,29 +294,29 @@ export function LandscapingLayout({ children }: LandscapingLayoutProps) {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-[#8B4513] bg-[#2F2F2F]/50">
+        <div className="border-t border-[#4A6741]/20 bg-[#FAFAFA]">
           <div className="container mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-[#D3D3D3] text-sm">
+              <p className="text-[#333333] text-sm">
                 © 2024 Island Creations. All rights reserved. Licensed &
                 Insured.
               </p>
-              <div className="flex gap-6 text-sm text-[#D3D3D3]">
+              <div className="flex gap-6 text-sm text-[#333333]">
                 <Link
                   to="/privacy"
-                  className="hover:text-[#FFA500] transition-colors"
+                  className="hover:text-[#1E90FF] transition-colors"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   to="/terms"
-                  className="hover:text-[#FFA500] transition-colors"
+                  className="hover:text-[#1E90FF] transition-colors"
                 >
                   Terms of Service
                 </Link>
                 <Link
                   to="/sitemap"
-                  className="hover:text-[#FFA500] transition-colors"
+                  className="hover:text-[#1E90FF] transition-colors"
                 >
                   Sitemap
                 </Link>

@@ -27,39 +27,39 @@ export function ContactSection() {
       title: "Visit Us",
       info: companyInfo.contact.address,
       description: "Stop by our office for in-person consultation",
-      color: "text-[#2F4F2F]",
+      color: "text-[#4A6741]",
     },
     {
       icon: Clock,
       title: "Business Hours",
       info: companyInfo.contact.hours,
       description: "We're here when you need us most",
-      color: "text-[#800000]",
+      color: "text-[#4A6741]",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-[#D3D3D3]/30 to-white">
+    <section className="py-20 bg-[#FAFAFA] text-[#333333]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#800000] mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#4A6741] mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-[#2F2F2F] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#333333] max-w-3xl mx-auto leading-relaxed">
             Ready to transform your landscape? Contact us today for a free
             consultation and let's discuss how we can bring your tropical
             paradise vision to life.
           </p>
-          <div className="mt-6 w-24 h-1 bg-[#FFA500] mx-auto rounded-full"></div>
+          <div className="mt-6 w-24 h-1 bg-[#1E90FF] mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="border-2 border-[#8B4513]/20 shadow-lg">
-            <CardHeader className="bg-gradient-to-r from-[#2F4F2F] to-[#8B4513] text-white rounded-t-lg">
+          <Card className="border-2 border-[#4A6741]/20 shadow-lg bg-white">
+            <CardHeader className="bg-[#FAFAFA] text-[#333333] rounded-t-lg border-b border-[#4A6741]/20">
               <CardTitle className="text-2xl font-bold flex items-center gap-2">
-                <Send className="h-6 w-6 text-[#FFA500]" />
+                <Send className="h-6 w-6 text-[#1E90FF]" />
                 Request Your Free Estimate
               </CardTitle>
             </CardHeader>
@@ -68,62 +68,62 @@ export function ContactSection() {
                 <div className="space-y-2">
                   <Label
                     htmlFor="firstName"
-                    className="text-[#2F2F2F] font-medium"
+                    className="text-[#333333] font-medium"
                   >
                     First Name
                   </Label>
                   <Input
                     id="firstName"
                     placeholder="John"
-                    className="border-[#8B4513]/30 focus:border-[#FFA500] focus:ring-[#FFA500]"
+                    className="border-[#4A6741]/30 focus:border-[#1E90FF] focus:ring-[#1E90FF]"
                   />
                 </div>
                 <div className="space-y-2">
                   <Label
                     htmlFor="lastName"
-                    className="text-[#2F2F2F] font-medium"
+                    className="text-[#333333] font-medium"
                   >
                     Last Name
                   </Label>
                   <Input
                     id="lastName"
                     placeholder="Doe"
-                    className="border-[#8B4513]/30 focus:border-[#FFA500] focus:ring-[#FFA500]"
+                    className="border-[#4A6741]/30 focus:border-[#1E90FF] focus:ring-[#1E90FF]"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-[#2F2F2F] font-medium">
+                <Label htmlFor="email" className="text-[#333333] font-medium">
                   Email Address
                 </Label>
                 <Input
                   id="email"
                   type="email"
                   placeholder="john@example.com"
-                  className="border-[#8B4513]/30 focus:border-[#FFA500] focus:ring-[#FFA500]"
+                  className="border-[#4A6741]/30 focus:border-[#1E90FF] focus:ring-[#1E90FF]"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="phone" className="text-[#2F2F2F] font-medium">
+                <Label htmlFor="phone" className="text-[#333333] font-medium">
                   Phone Number
                 </Label>
                 <Input
                   id="phone"
                   type="tel"
                   placeholder="(555) 123-4567"
-                  className="border-[#8B4513]/30 focus:border-[#FFA500] focus:ring-[#FFA500]"
+                  className="border-[#4A6741]/30 focus:border-[#1E90FF] focus:ring-[#1E90FF]"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="service" className="text-[#2F2F2F] font-medium">
+                <Label htmlFor="service" className="text-[#333333] font-medium">
                   Service Interested In
                 </Label>
                 <select
                   id="service"
-                  className="w-full px-3 py-2 border border-[#8B4513]/30 rounded-md focus:border-[#FFA500] focus:ring-[#FFA500] focus:ring-1 bg-white text-[#2F2F2F]"
+                  className="w-full px-3 py-2 border border-[#4A6741]/30 rounded-md focus:border-[#1E90FF] focus:ring-[#1E90FF] focus:ring-1 bg-white text-[#333333]"
                 >
                   <option value="">Select a service...</option>
                   <option value="excavation">Excavation Services</option>
@@ -136,26 +136,26 @@ export function ContactSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-[#2F2F2F] font-medium">
+                <Label htmlFor="message" className="text-[#333333] font-medium">
                   Project Details
                 </Label>
                 <Textarea
                   id="message"
                   placeholder="Tell us about your landscaping project, timeline, and any specific requirements..."
                   rows={4}
-                  className="border-[#8B4513]/30 focus:border-[#FFA500] focus:ring-[#FFA500] resize-none"
+                  className="border-[#4A6741]/30 focus:border-[#1E90FF] focus:ring-[#1E90FF] resize-none"
                 />
               </div>
 
               <Button
                 size="lg"
-                className="w-full bg-[#FFA500] hover:bg-[#FF8C00] text-[#2F2F2F] font-semibold border-2 border-[#8B4513] shadow-lg"
+                className="w-full bg-[#FFA500] hover:bg-[#FFA500]/90 text-[#333333] font-semibold border-2 border-[#4A6741] shadow-lg"
               >
                 Send Message & Get Free Estimate
                 <Send className="ml-2 h-5 w-5" />
               </Button>
 
-              <p className="text-sm text-[#2F2F2F]/70 text-center">
+              <p className="text-sm text-[#333333]/70 text-center">
                 We'll respond within 24 hours with your personalized estimate
               </p>
             </CardContent>
@@ -169,23 +169,23 @@ export function ContactSection() {
                 return (
                   <Card
                     key={index}
-                    className="border-2 border-[#8B4513]/20 hover:border-[#FFA500] transition-colors bg-white hover:shadow-lg"
+                    className="border-2 border-[#4A6741]/20 hover:border-[#1E90FF] transition-colors bg-white hover:shadow-lg"
                   >
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="p-3 rounded-full bg-gradient-to-br from-[#2F4F2F] to-[#8B4513]">
+                        <div className="p-3 rounded-full bg-[#4A6741]/10 border border-[#4A6741]/30">
                           <IconComponent
                             className={`h-6 w-6 ${method.color}`}
                           />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-semibold text-[#800000] text-lg mb-1">
+                          <h3 className="font-semibold text-[#4A6741] text-lg mb-1">
                             {method.title}
                           </h3>
-                          <p className="text-[#2F2F2F] font-medium mb-2">
+                          <p className="text-[#333333] font-medium mb-2">
                             {method.info}
                           </p>
-                          <p className="text-sm text-[#2F2F2F]/70">
+                          <p className="text-sm text-[#333333]/70">
                             {method.description}
                           </p>
                         </div>
@@ -197,12 +197,12 @@ export function ContactSection() {
             </div>
 
             {/* Emergency Contact */}
-            <Card className="border-2 border-[#1E90FF]/30 bg-gradient-to-r from-[#1E90FF]/5 to-[#2F4F2F]/5">
+            <Card className="border-2 border-[#1E90FF]/30 bg-[#FAFAFA]">
               <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-[#800000] text-lg mb-2">
+                <h3 className="font-bold text-[#4A6741] text-lg mb-2">
                   Emergency Services Available
                 </h3>
-                <p className="text-[#2F2F2F] mb-4">
+                <p className="text-[#333333] mb-4">
                   Storm damage cleanup and emergency tree removal services
                   available 24/7
                 </p>
@@ -216,12 +216,12 @@ export function ContactSection() {
             </Card>
 
             {/* Service Area */}
-            <Card className="border-2 border-[#2F4F2F]/20 bg-gradient-to-r from-[#2F4F2F]/5 to-[#8B4513]/5">
+            <Card className="border-2 border-[#4A6741]/20 bg-[#FAFAFA]">
               <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-[#800000] text-lg mb-2">
+                <h3 className="font-bold text-[#4A6741] text-lg mb-2">
                   Service Areas
                 </h3>
-                <p className="text-[#2F2F2F] mb-4">
+                <p className="text-[#333333] mb-4">
                   Proudly serving South Florida and surrounding tropical
                   communities
                 </p>
@@ -230,7 +230,7 @@ export function ContactSection() {
                     (area) => (
                       <span
                         key={area}
-                        className="px-3 py-1 bg-[#FFA500]/20 text-[#2F2F2F] rounded-full text-sm border border-[#FFA500]/30"
+                        className="px-3 py-1 bg-[#FFA500]/20 text-[#333333] rounded-full text-sm border border-[#FFA500]/30"
                       >
                         {area}
                       </span>
